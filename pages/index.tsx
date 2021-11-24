@@ -1,18 +1,26 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import React, { useState } from "react";
 import Navbar from "../src/components/Navbar";
-import styles from "../styles/Home.module.scss";
+import Sidebar from "../src/components/Sidebar";
 
 const Home: NextPage = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleSidebar = (): void => {
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Vinu Jey Portfolio</title>
         <meta name="description" content="Vinu Jey Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
+      <Navbar toggleSidebar={toggleSidebar}/>
     </div>
   );
 };

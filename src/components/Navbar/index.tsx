@@ -7,31 +7,35 @@ import {
   Hamburger,
   NavMenu,
   NavItem,
-  NavLinks,
+  NavLink,
 } from "./NavbarElements";
 
-const Navbar = () => {
+interface IProps {
+  toggleSidebar: () => void
+}
+
+const Navbar = (props: IProps) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo href="/">VJ</NavLogo>
         </NavbarContainer>
-        <Hamburger>
+        <Hamburger onClick={props.toggleSidebar}>
           <FaBars />
         </Hamburger>
         <NavMenu>
           <NavItem>
-            <NavLinks to="#about">About</NavLinks>
+            <NavLink to="about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLinks to="#work">Work</NavLinks>
+            <NavLink to="work">Work</NavLink>
           </NavItem>
           <NavItem>
-            <NavLinks to="#contact">Contact</NavLinks>
+            <NavLink to="contact">Contact</NavLink>
           </NavItem>
           <NavItem>
-            <NavLinks to="">Resume</NavLinks>
+            <NavLink to="">Resume</NavLink>
           </NavItem>
         </NavMenu>
       </Nav>

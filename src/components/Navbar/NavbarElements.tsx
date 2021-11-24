@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky; //investigate
+  position: sticky;
   top: 0;
   z-index: 10;
 
@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   z-index: 1;
   padding: 0 1.5rem;
-  max-width: 70rem; //investigate why
+  max-width: 70rem;
 `;
 
 export const NavLogo = styled.a`
@@ -46,14 +46,18 @@ export const Hamburger = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block; //check without
+    display: block;
     color: #fff;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%); //check
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    border: 1px solid red;
+    &:hover {
+      color: red;
+    }
   }
 `;
 
@@ -72,7 +76,7 @@ export const NavItem = styled.li`
   height: 5rem;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLink = styled(LinkScroll)`
   color: #fff;
   display: flex;
   align-items: center;
