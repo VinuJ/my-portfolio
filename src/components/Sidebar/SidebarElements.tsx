@@ -4,7 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 import { theme } from "../../../styles/colours";
 
 interface IProps {
-  isOpen: boolean
+  isOpen: boolean;
 }
 
 export const SidebarContainer = styled.aside`

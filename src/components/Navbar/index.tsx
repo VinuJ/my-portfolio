@@ -11,7 +11,7 @@ import {
 } from "./NavbarElements";
 
 interface IProps {
-  toggleSidebar: () => void
+  toggleSidebar: () => void;
 }
 
 const Navbar = (props: IProps) => {

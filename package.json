@@ -1,7 +1,10 @@
 {
+  "homepage": "https://vinuj.github.io/portfolio/",
   "name": "my-portfolio",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -9,6 +12,7 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.15",
+    "gh-pages": "^3.2.3",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
