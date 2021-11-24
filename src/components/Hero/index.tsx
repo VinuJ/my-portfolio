@@ -9,7 +9,7 @@ const Hero = () => {
                 <VideoBg autoPlay loop muted src={"/video.mp4"}/>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Hi, I'm Vinu</HeroH1>
+                <HeroH1>Hi, I&apos;m Vinu</HeroH1>
                 <HeroP>
                     Software developer looking to learn new skills and improve your company at the same time.
                 </HeroP>
