@@ -19,7 +19,7 @@ const Navbar = (props: IProps) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo href="/">VJ</NavLogo>
+          <NavLogo href="/">Vinu Jey</NavLogo>
         </NavbarContainer>
         <Hamburger onClick={props.toggleSidebar}>
           <FaBars />

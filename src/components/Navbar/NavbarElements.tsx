@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
+import { theme } from "../../../styles/colours";
 
 export const Nav = styled.nav`
   background: #000;
@@ -54,9 +55,11 @@ export const Hamburger = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    border: 1px solid red;
+    z-index: 1;
+    transition: 0.2s color ease-in-out;
     &:hover {
-      color: red;
+      color: ${theme.colour};
+      transition: 0.2s ease-in-out;
     }
   }
 `;
@@ -84,9 +87,15 @@ export const NavLink = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: 0.2s color ease-in-out;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid ${theme.colour};
+  }
+
+  &:hover {
+    color: ${theme.colour};
+    transition: 0.2s color ease-in-out;
   }
 `;
 

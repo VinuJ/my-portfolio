@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkScroll } from "react-scroll";
+import { theme } from "../../../styles/colours";
 
 interface IProps {
   isOpen: boolean
@@ -33,10 +34,10 @@ export const Icon = styled.div`
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s color ease-in-out;
   &:hover {
-    color: #01bf71;
-    transition: 0.2s ease-in-out;
+    color: ${theme.colour};
+    transition: 0.2s color ease-in-out;
   }
 `;
 
@@ -51,7 +52,7 @@ export const SidebarMenu = styled.ul`
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat() (6, 3rem);
+    grid-template-rows: repeat(6, 4rem);
   }
 `;
 
@@ -67,7 +68,7 @@ export const SidebarLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${theme.colour};
     transition: 0.2s ease-in-out;
   }
 `;

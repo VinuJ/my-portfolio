@@ -21,7 +21,7 @@ const Sidebar = (props: IProps) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={props.toggleSidebar}>About</SidebarLink>
+          <SidebarLink to="about">About</SidebarLink>
           <SidebarLink to="work">Work</SidebarLink>
           <SidebarLink to="contact">Contact</SidebarLink>
           <SidebarLink to="resume">Resume</SidebarLink>
