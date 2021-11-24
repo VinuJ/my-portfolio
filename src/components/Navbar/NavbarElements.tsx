@@ -100,7 +100,7 @@ export const NavLink = styled(LinkScroll)`
 `;
 
 // Allows for Next.js Link element styling
-export default (href: any) => (
+export const LinkN = (href: any) => (
   <Link prefetch href={href} passHref>
     <NavLogo></NavLogo>
   </Link>
