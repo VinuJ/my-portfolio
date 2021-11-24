@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import React, { useState } from "react";
+import Hero from "../src/components/Hero";
 import Navbar from "../src/components/Navbar";
 import Sidebar from "../src/components/Sidebar";
 
 const Home: NextPage = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = (): void => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div>
@@ -19,8 +20,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
-      <Navbar toggleSidebar={toggleSidebar}/>
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Hero />
     </div>
   );
 };
