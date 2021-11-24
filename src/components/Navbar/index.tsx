@@ -8,6 +8,7 @@ import {
   NavMenu,
   NavItem,
   NavLink,
+  NavSpace,
 } from "./NavbarElements";
 
 interface IProps {
@@ -16,11 +17,9 @@ interface IProps {
 
 const Navbar = (props: IProps) => {
   return (
-    <>
-      <Nav>
-        <NavbarContainer>
-          <NavLogo href="/">Vinu Jey</NavLogo>
-        </NavbarContainer>
+    <Nav>
+      <NavbarContainer>
+        <NavLogo href="/">Vinu Jey</NavLogo>
         <Hamburger onClick={props.toggleSidebar}>
           <FaBars />
         </Hamburger>
@@ -38,8 +37,9 @@ const Navbar = (props: IProps) => {
             <NavLink to="">Resume</NavLink>
           </NavItem>
         </NavMenu>
-      </Nav>
-    </>
+        <NavSpace></NavSpace>
+      </NavbarContainer>
+    </Nav>
   );
 };
 

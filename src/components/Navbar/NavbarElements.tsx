@@ -6,7 +6,6 @@ import { theme } from "../../../styles/colours";
 export const Nav = styled.nav`
   background: #000;
   height: 5rem;
-  /* margin-top: -5rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +32,6 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled.a`
   color: #fff;
-  /* justify-self: flex-start; n/a for flexbox layout*/
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
@@ -69,7 +67,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -98,6 +95,14 @@ export const NavLink = styled(LinkScroll)`
     transition: 0.2s color ease-in-out;
   }
 `;
+
+export const NavSpace = styled.div`
+  background: inherit;
+  width: 6rem;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`
 
 // Allows for Next.js Link element styling
 export const LinkN = (href: any) => (

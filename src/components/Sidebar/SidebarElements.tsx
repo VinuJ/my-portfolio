@@ -18,18 +18,16 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${(props) => (props.isOpen ? "100%" : "0%")};
+  opacity: ${(props: IProps) => (props.isOpen ? "100%" : "0%")};
   top: ${(props: IProps) => (props.isOpen ? "0" : "-100%")};
 `;
 
 export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
-  right: 1.5rem; //check
-  /* background: transparent; */
+  right: 1.5rem;
   font-size: 2rem;
   cursor: pointer;
-  /* outline: none; //check */
 `;
 
 export const CloseIcon = styled(FaTimes)`
