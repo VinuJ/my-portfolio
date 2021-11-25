@@ -6,6 +6,7 @@ import { theme } from "../../../styles/colours";
 export const Nav = styled.nav`
   background: #000;
   height: 5rem;
+  margin-top: -5rem;
   display: flex;
   justify-content: center;
   align-items: center;
