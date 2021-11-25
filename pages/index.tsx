@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import React, { useState } from "react";
 import Hero from "../src/components/Hero";
+import Info from "../src/components/Info";
+import { homeObjOne } from "../src/components/Info/Data";
 import Navbar from "../src/components/Navbar";
 import Sidebar from "../src/components/Sidebar";
 
@@ -13,7 +15,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div>
+    <div id="home">
       <Head>
         <title>Vinu Jey Portfolio</title>
         <meta name="description" content="Vinu Jey Portfolio" />
@@ -23,6 +25,7 @@ const Home: NextPage = () => {
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <Navbar toggleSidebar={toggleSidebar} />
       <Hero />
+      <Info {...homeObjOne}/>
     </div>
   );
 };
