@@ -99,7 +99,7 @@ export const NavLink = styled(LinkScroll)`
 
 export const NavSpace = styled.div`
   background: inherit;
-  width: 6rem;
+  width: 8rem;
   @media screen and (max-width: 768px) {
     display: none;
   }
