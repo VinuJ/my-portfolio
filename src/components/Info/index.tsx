@@ -58,7 +58,7 @@ const Info = ({
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <ButtonWrapper>
-                <Button to="home" smooth={true} duration={500} spy={true} offset={-80} primary={primary} dark={dark}>
+                <Button to="home" smooth={true} duration={500} spy={true} primary={primary} dark={dark}>
                   {buttonLabel}
                 </Button>
               </ButtonWrapper>
