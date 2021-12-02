@@ -27,7 +27,7 @@ export const Button = styled(LinkScroll)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({ primary }: IProps) =>
-      primary ? theme.dark : theme.colour};
-    color: ${({ dark }: IProps) => (dark ? "#fff" : theme.dark)};
+      primary ? "#fff" : theme.colour};
+    color: ${({ dark }: IProps) => (dark ? theme.dark : "#fff")};
   }
 `;

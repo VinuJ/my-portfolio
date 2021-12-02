@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
   max-width: 70rem;
 `;
 
-export const NavLogo = styled.a`
+export const NavLogo = styled(LinkScroll)`
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
@@ -40,6 +40,11 @@ export const NavLogo = styled.a`
   margin-left: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+  transition: 0.2s color ease-in-out;
+    &:hover {
+      color: ${theme.colour};
+      transition: 0.2s ease-in-out;
+    }
 `;
 
 export const Hamburger = styled.div`

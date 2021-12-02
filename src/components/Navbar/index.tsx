@@ -19,19 +19,19 @@ const Navbar = (props: IProps) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo href="/">Vinu Jey</NavLogo>
+        <NavLogo to="home" smooth={true} offset={-80} duration={500} spy={true}>Vinu Jey</NavLogo>
         <Hamburger onClick={props.toggleSidebar}>
           <FaBars />
         </Hamburger>
         <NavMenu>
           <NavItem>
-            <NavLink to="about" smooth={true} duration={500} spy={true}>About</NavLink>
+            <NavLink to="about" smooth={true} offset={-80} duration={500} spy={true}>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="work">Work</NavLink>
+            <NavLink to="work" smooth={true} offset={-80} duration={500}>Work</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="contact">Contact</NavLink>
+            <NavLink to="contact" smooth={true} offset={-80} duration={500} spy={true}>Contact</NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="">Resume</NavLink>

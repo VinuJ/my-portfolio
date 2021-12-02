@@ -1,9 +1,8 @@
 export const homeObjOne = {
   id: "about",
-  lightBg: false,
-  lightText: true,
-  darkText: false,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  darkText: true,
   topLine: "About Me",
   headline: "Computer science graduate that loves to code",
   description:
@@ -12,6 +11,23 @@ export const homeObjOne = {
   imgFirst: false,
   img: "/svg-1.svg",
   alt: "Programming",
-  primary: true,
-  dark: true,
+  primary: false,
+  dark: false,
+};
+
+export const homeObjTwo = {
+  id: "contact",
+  lightBg: true,
+  lightText: false,
+  darkText: true,
+  topLine: "Contact",
+  headline: "You can find me on any of the following",
+  description:
+    "Yeah links woo crayyzzyy",
+  buttonLabel: "View LinkedIn",
+  imgFirst: true,
+  img: "/svg-1.svg",
+  alt: "Programming",
+  primary: false,
+  dark: false,
 };

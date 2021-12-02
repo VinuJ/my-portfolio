@@ -20,7 +20,6 @@ interface IProps {
   lightBg: boolean;
   lightText: boolean;
   darkText: boolean;
-  lightTextDesc: boolean;
   topLine: string;
   headline: string;
   description: string;
@@ -37,7 +36,6 @@ const Info = ({
   lightBg,
   lightText,
   darkText,
-  lightTextDesc,
   topLine,
   headline,
   description,
@@ -58,7 +56,7 @@ const Info = ({
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <ButtonWrapper>
-                <Button to="home" smooth={true} duration={500} spy={true} primary={primary} dark={dark}>
+                <Button to="" smooth={true} offset={-80} duration={500} spy={true} primary={primary} dark={dark}>
                   {buttonLabel}
                 </Button>
               </ButtonWrapper>
