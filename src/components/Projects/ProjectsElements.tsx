@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { theme } from '../../../styles/colours'
 
 export const ProjectsContainer = styled.div`
-    border: 1px solid red;
-    height: 100vh;
+    /* border: 1px solid red; */
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -11,13 +11,13 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     background: ${theme.dark};
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         height: 70rem;
     }
 
     @media screen and (max-width: 480px) {
         height: 85rem;
-    }
+    } */
 `
 export const ProjectsH1 = styled.h1`
     font-size: 2.5rem;
@@ -36,6 +36,7 @@ export const ProjectsWrapper = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 2rem;
 `
 
 export const ProjectsCard = styled.div`
@@ -66,8 +67,9 @@ export const ProjectsThumbnail = styled.img`
 `
 
 export const ProjectsH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    text-align: center;
 `
 
 export const ProjectsP = styled.p`

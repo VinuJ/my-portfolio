@@ -3,8 +3,12 @@ import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import { theme } from "../../../styles/colours";
 
+interface IRowNav {
+  scrollNav: boolean;
+}
+
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({scrollNav}: IRowNav) => (scrollNav ? '#000' : 'transparent')};
   height: 5rem;
   margin-top: -5rem;
   display: flex;
@@ -111,8 +115,8 @@ export const NavSpace = styled.div`
 `
 
 // Allows for Next.js Link element styling
-export const LinkN = (href: any) => (
-  <Link prefetch href={href} passHref>
-    <NavLogo></NavLogo>
-  </Link>
-);
+// export const LinkN = (href: any) => (
+//   <Link prefetch href={href} passHref>
+//     <NavLogo></NavLogo>
+//   </Link>
+// );

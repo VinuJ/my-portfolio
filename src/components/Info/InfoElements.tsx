@@ -18,6 +18,7 @@ interface ISubtitleProps {
 }
 
 export const InfoContainer = styled.div`
+  min-height: 100vh;
   color: #fff;
   background: ${({ lightBg }: IContainerProps) =>
     lightBg ? theme.light : theme.dark};

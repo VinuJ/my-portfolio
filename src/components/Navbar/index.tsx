@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -16,8 +16,22 @@ interface IProps {
 }
 
 const Navbar = (props: IProps) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+  
   return (
-    <Nav>
+    <Nav scrollNav={scrollNav}>
       <NavbarContainer>
         <NavLogo to="home" smooth={true} offset={-80} duration={500} spy={true}>Vinu Jey</NavLogo>
         <Hamburger onClick={props.toggleSidebar}>
@@ -28,7 +42,7 @@ const Navbar = (props: IProps) => {
             <NavLink to="about" smooth={true} offset={-80} duration={500} spy={true}>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="work" smooth={true} offset={-80} duration={500}>Work</NavLink>
+            <NavLink to="work" smooth={true} offset={-80} duration={500} spy={true}>Work</NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="contact" smooth={true} offset={-80} duration={500} spy={true}>Contact</NavLink>
