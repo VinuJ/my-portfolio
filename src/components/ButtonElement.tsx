@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 import { theme } from "../../styles/colours";
+import internal from "stream";
 
 interface IProps {
   primary?: boolean;

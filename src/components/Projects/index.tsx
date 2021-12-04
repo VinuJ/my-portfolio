@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElement";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -8,7 +7,8 @@ import {
   ProjectsH2,
   ProjectsThumbnail,
   ProjectsP,
-  ProjectsButtons,
+  ButtonsWrapper,
+  ProjectButton
 } from "./ProjectsElements";
 
 const Projects = () => {
@@ -18,41 +18,80 @@ const Projects = () => {
       <ProjectsWrapper>
         <ProjectsCard>
           <ProjectsH2>Movies and Shows</ProjectsH2>
-          <ProjectsThumbnail src="\svg-1.svg"></ProjectsThumbnail>
+          <ProjectsThumbnail src="\svg-2.svg"></ProjectsThumbnail>
           <ProjectsP>
             Fetches top search results from a REST API using Axios, stores them
             using Redux Toolkit and renders through React and SASS
           </ProjectsP>
-          {/* <ProjectsButtons>
-            <Button>View Source Code</Button>
-            <Button>View Live Demo</Button>
-          </ProjectsButtons> */}
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/redux-movie-app/" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinuj.github.io/redux-movie-app/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
         </ProjectsCard>
 
         <ProjectsCard>
           <ProjectsH2>Drum Machine</ProjectsH2>
-          <ProjectsThumbnail src="\svg-1.svg"></ProjectsThumbnail>
+          <ProjectsThumbnail src="\svg-3.svg"></ProjectsThumbnail>
           <ProjectsP>
             Built using React and SASS, plays two different drum kits' sounds
             when clicked on / corresponding keys are pressed
           </ProjectsP>
-          {/* <ProjectsButtons>
-            <Button>View Source Code</Button>
-            <Button>View Live Demo</Button>
-          </ProjectsButtons> */}
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/drum-machine" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinuj.github.io/drum-machine/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
         </ProjectsCard>
 
         <ProjectsCard>
           <ProjectsH2>Random Quote Machine</ProjectsH2>
-          <ProjectsThumbnail src="\svg-1.svg"></ProjectsThumbnail>
+          <ProjectsThumbnail src="\svg-4.svg"></ProjectsThumbnail>
           <ProjectsP>
             Built using React and SASS, displays a random quote pulled from a
             stored JSON file and offers the ability to instantly tweet it
           </ProjectsP>
-          {/* <ProjectsButtons>
-            <Button>View Source Code</Button>
-            <Button>View Live Demo</Button>
-          </ProjectsButtons> */}
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/random-quote-machine" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinuj.github.io/random-quote-machine/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
+        </ProjectsCard>
+
+        <ProjectsCard>
+          <ProjectsH2>TypeScript Calculator</ProjectsH2>
+          <ProjectsThumbnail src="\svg-5.svg"></ProjectsThumbnail>
+          <ProjectsP>
+            Built using React and SASS, displays a random quote pulled from a
+            stored JSON file and offers the ability to instantly tweet it
+          </ProjectsP>
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/typescript-calculator" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinuj.github.io/typescript-calculator/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
+        </ProjectsCard>
+
+        <ProjectsCard>
+          <ProjectsH2>Pomodoro Timer</ProjectsH2>
+          <ProjectsThumbnail src="\svg-6.svg"></ProjectsThumbnail>
+          <ProjectsP>
+            Built using React and SASS, displays a random quote pulled from a
+            stored JSON file and offers the ability to instantly tweet it
+          </ProjectsP>
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/pomodoro-timer" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinuj.github.io/pomodoro-timer/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
+        </ProjectsCard>
+
+        <ProjectsCard>
+          <ProjectsH2>Markdown Previewer</ProjectsH2>
+          <ProjectsThumbnail src="\svg-7.svg"></ProjectsThumbnail>
+          <ProjectsP>
+            Built using React and SASS, displays a random quote pulled from a
+            stored JSON file and offers the ability to instantly tweet it
+          </ProjectsP>
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/markdown-previewer" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinuj.github.io/markdown-previewer/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
         </ProjectsCard>
       </ProjectsWrapper>
     </ProjectsContainer>

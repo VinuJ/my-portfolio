@@ -7,7 +7,7 @@ export const homeObjOne = {
   headline: "Computer science graduate that loves to code",
   description:
     "Looking for entry level jobs. Graduated with first class honours (78%) Bachelor of Engineering in computer science from the University of York",
-  buttonLabel: "View LinkedIn",
+  buttonLabel: "View Projects",
   imgFirst: false,
   img: "/svg-1.svg",
   alt: "Programming",
@@ -26,7 +26,7 @@ export const homeObjTwo = {
     "Yeah links woo crayyzzyy",
   buttonLabel: "View LinkedIn",
   imgFirst: true,
-  img: "/svg-1.svg",
+  img: "/svg-8.svg",
   alt: "Programming",
   primary: false,
   dark: false,
