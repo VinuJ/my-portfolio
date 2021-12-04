@@ -18,6 +18,9 @@ interface ISubtitleProps {
 }
 
 export const InfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: calc(100vh - 5rem);
   color: #fff;
   background: ${({ lightBg }: IContainerProps) =>
@@ -31,7 +34,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 54rem;
+  //height: 54rem;
   width: 100%;
   max-height: 70rem;
   padding: 0 1.5rem;
@@ -48,6 +51,7 @@ export const InfoRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgFirst }: IRowProps) =>
       imgFirst ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    gap: 1rem;
   }
 `;
 

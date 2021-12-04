@@ -23,6 +23,9 @@ interface IButtonProps {
 }
 
 export const InfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: calc(100vh - 5rem);
   color: #fff;
   background: ${({ lightBg }: IContainerProps) =>
@@ -36,7 +39,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 54rem;
+  //height: 54rem;
   width: 100%;
   max-height: 70rem;
   padding: 0 1.5rem;
