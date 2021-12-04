@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink,
   NavSpace,
+  NavA,
 } from "./NavbarElements";
 
 interface IProps {
@@ -48,7 +49,7 @@ const Navbar = (props: IProps) => {
             <NavLink to="contact" smooth={true} offset={-80} duration={500} spy={true}>Contact</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="">Resume</NavLink>
+            <NavA href="\vinuCV.pdf" target="_blank">Resume</NavA>
           </NavItem>
         </NavMenu>
         <NavSpace></NavSpace>

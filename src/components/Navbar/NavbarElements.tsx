@@ -106,6 +106,26 @@ export const NavLink = styled(LinkScroll)`
   }
 `;
 
+export const NavA = styled.a`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+
+  &.active {
+    border-bottom: 3px solid ${theme.colour};
+  }
+
+  &:hover {
+    color: ${theme.colour};
+    transition: 0.2s color ease-in-out;
+  }
+`;
+
 export const NavSpace = styled.div`
   background: inherit;
   width: 8rem;

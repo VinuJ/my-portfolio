@@ -33,7 +33,7 @@ const Projects = () => {
           <ProjectsH2>Drum Machine</ProjectsH2>
           <ProjectsThumbnail src="\svg-3.svg"></ProjectsThumbnail>
           <ProjectsP>
-            Built using React and SASS, plays two different drum kits' sounds
+            Built using React, TypeScript and SASS, plays two different drum kits' sounds
             when clicked on / corresponding keys are pressed
           </ProjectsP>
           <ButtonsWrapper>
@@ -46,8 +46,8 @@ const Projects = () => {
           <ProjectsH2>Random Quote Machine</ProjectsH2>
           <ProjectsThumbnail src="\svg-4.svg"></ProjectsThumbnail>
           <ProjectsP>
-            Built using React and SASS, displays a random quote pulled from a
-            stored JSON file and offers the ability to instantly tweet it
+            Displays a random quote pulled from a
+            stored JSON file and offers the ability to instantly tweet it, made using React and SASS
           </ProjectsP>
           <ButtonsWrapper>
             <ProjectButton href="https://github.com/VinuJ/random-quote-machine" target="_blank">View Source Code</ProjectButton>
@@ -59,8 +59,7 @@ const Projects = () => {
           <ProjectsH2>TypeScript Calculator</ProjectsH2>
           <ProjectsThumbnail src="\svg-5.svg"></ProjectsThumbnail>
           <ProjectsP>
-            Built using React and SASS, displays a random quote pulled from a
-            stored JSON file and offers the ability to instantly tweet it
+            A simple but clean calculator made using TypeScript, React and SASS
           </ProjectsP>
           <ButtonsWrapper>
             <ProjectButton href="https://github.com/VinuJ/typescript-calculator" target="_blank">View Source Code</ProjectButton>
@@ -72,8 +71,7 @@ const Projects = () => {
           <ProjectsH2>Pomodoro Timer</ProjectsH2>
           <ProjectsThumbnail src="\svg-6.svg"></ProjectsThumbnail>
           <ProjectsP>
-            Built using React and SASS, displays a random quote pulled from a
-            stored JSON file and offers the ability to instantly tweet it
+            Well-known productivity tool with adjustable study session and break lengths, made using TypeScript, React, Sass and Materialize CSS
           </ProjectsP>
           <ButtonsWrapper>
             <ProjectButton href="https://github.com/VinuJ/pomodoro-timer" target="_blank">View Source Code</ProjectButton>
@@ -85,8 +83,7 @@ const Projects = () => {
           <ProjectsH2>Markdown Previewer</ProjectsH2>
           <ProjectsThumbnail src="\svg-7.svg"></ProjectsThumbnail>
           <ProjectsP>
-            Built using React and SASS, displays a random quote pulled from a
-            stored JSON file and offers the ability to instantly tweet it
+            Enter GitHub flavored markdown into the editor to see a live rendering, made using React and SASS
           </ProjectsP>
           <ButtonsWrapper>
             <ProjectButton href="https://github.com/VinuJ/markdown-previewer" target="_blank">View Source Code</ProjectButton>

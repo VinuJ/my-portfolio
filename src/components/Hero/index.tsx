@@ -20,7 +20,7 @@ const Hero = () => {
         <HeroH1>Hi! I'm Vinu Jey</HeroH1>
         <HeroP>
           An aspiring software engineer looking to learn new skills and improve your
-          company at the same time.
+          company at the same time
         </HeroP>
         <ButtonWrapper>
           <Button to="about" smooth={true} duration={500} spy={true} offset={-80} primary dark>
