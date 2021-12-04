@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "About Me",
   headline: "Computer science graduate that loves to code",
   description:
-    "Looking for entry level jobs. Graduated with first class honours (78%) Bachelor of Engineering in computer science from the University of York",
+    "Looking for entry level software engineering roles. Graduated with first class honours Bachelor of Engineering in computer science from the University of York and blah blah blah",
   buttonLabel: "View Projects",
   imgFirst: false,
   img: "/svg-1.svg",
@@ -15,19 +15,17 @@ export const homeObjOne = {
   dark: false,
 };
 
-export const homeObjTwo = {
+export const contactObj = {
   id: "contact",
   lightBg: true,
   lightText: false,
   darkText: true,
   topLine: "Contact",
-  headline: "You can find me on any of the following",
-  description:
-    "Yeah links woo crayyzzyy",
-  buttonLabel: "View LinkedIn",
+  headline: "Feel free to reach out if you'd like to work with me!",
+  description: "",
   imgFirst: true,
   img: "/svg-8.svg",
-  alt: "Programming",
+  alt: "Contact",
   primary: false,
   dark: false,
 };

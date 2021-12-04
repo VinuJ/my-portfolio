@@ -3,10 +3,11 @@ import Head from "next/head";
 import React, { useState } from "react";
 import Hero from "../src/components/Hero";
 import Info from "../src/components/Info";
-import { homeObjOne, homeObjTwo } from "../src/components/Info/Data";
+import { homeObjOne, contactObj } from "../src/components/Info/Data";
 import Navbar from "../src/components/Navbar";
 import Sidebar from "../src/components/Sidebar";
 import Projects from "../src/components/Projects"
+import Contact from "../src/components/Contact";
 
 const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
       <Hero />
       <Info {...homeObjOne} />
       <Projects />
-      <Info {...homeObjTwo} />
+      <Contact {...contactObj} />
     </div>
   );
 };

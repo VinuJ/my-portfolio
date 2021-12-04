@@ -23,7 +23,7 @@ const Hero = () => {
           company at the same time.
         </HeroP>
         <ButtonWrapper>
-          <Button to="about" smooth={true} duration={500} spy={true} primary dark>
+          <Button to="about" smooth={true} duration={500} spy={true} offset={-80} primary dark>
             Learn More
           </Button>
         </ButtonWrapper>
