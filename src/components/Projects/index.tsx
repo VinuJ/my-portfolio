@@ -16,6 +16,18 @@ const Projects = () => {
     <ProjectsContainer id="work">
       <ProjectsH1>These are some of my projects</ProjectsH1>
       <ProjectsWrapper>
+      <ProjectsCard>
+          <ProjectsH2>Portfolio Website</ProjectsH2>
+          <ProjectsThumbnail src="\svg-9.svg"></ProjectsThumbnail>
+          <ProjectsP>
+            The site you're currently on! Made using Next.js and React styled-components
+          </ProjectsP>
+          <ButtonsWrapper>
+            <ProjectButton href="https://github.com/VinuJ/my-portfolio" target="_blank">View Source Code</ProjectButton>
+            <ProjectButton href="https://vinu-jey.vercel.app/" target="_blank">View Live Demo</ProjectButton>
+          </ButtonsWrapper>
+        </ProjectsCard>
+
         <ProjectsCard>
           <ProjectsH2>Movies and Shows</ProjectsH2>
           <ProjectsThumbnail src="\svg-2.svg"></ProjectsThumbnail>
