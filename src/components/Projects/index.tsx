@@ -33,7 +33,7 @@ const Projects = () => {
           <ProjectsThumbnail src="\svg-2.svg"></ProjectsThumbnail>
           <ProjectsP>
             Fetches top search results from a REST API using Axios, stores them
-            using Redux Toolkit and renders through React and SASS
+            using Redux Toolkit and renders through React and SASS. Routes are managed with React Router.
           </ProjectsP>
           <ButtonsWrapper>
             <ProjectButton href="https://github.com/VinuJ/redux-movie-app/" target="_blank">View Source Code</ProjectButton>
